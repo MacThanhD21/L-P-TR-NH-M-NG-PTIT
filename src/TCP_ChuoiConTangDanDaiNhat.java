@@ -6,49 +6,39 @@ public class TCP_ChuoiConTangDanDaiNhat {
 
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("203.162.10.109", 2206);
-        String code = "B21DCCN001;XGIm2Fc7";
+        String code = "B21DCCN007;f3aTD8yw";
 
         InputStream is = socket.getInputStream();
         OutputStream os = socket.getOutputStream();
 
-        try {
-            // Gửi mã sinh viên và mã câu hỏi
-            os.write(code.getBytes());
-            os.flush();
-            
-            System.out.println("ok");
+        // Gửi mã sinh viên và mã câu hỏi
+        os.write(code.getBytes());
+        os.flush();
 
-            // Nhận dữ liệu từ server
-            byte[] data = new byte[1024];
-            int len = is.read(data);
-            System.out.println(len);
-            if (len == -1) {
-                System.out.println("Không nhận được dữ liệu từ server.");
-                return;
-            }
 
-            // Xử lý dữ liệu nhận được
-            String dataStr = (new String(data, 0, len)).trim();
-            System.out.println("Dữ liệu nhận được: " + dataStr);
-            String[] numbers = dataStr.split(",");
-            int[] array = new int[numbers.length];
-            for (int i = 0; i < numbers.length; i++) {
-                array[i] = Integer.parseInt(numbers[i]);
-            }
+        // Nhận dữ liệu từ server
+        byte[] data = new byte[1024];
+        int len = is.read(data);
 
-            // Tìm chuỗi con tăng dần dài nhất
-            int maxLength = findLongestIncreasingSubsequence(array);
-            System.out.println("Độ dài chuỗi con tăng dần dài nhất: " + maxLength);
-
-            // Gửi độ dài về server
-            os.write(String.valueOf(maxLength).getBytes());
-            os.flush();
-        } finally {
-            // Đóng kết nối
-            socket.close();
-            is.close();
-            os.close();
+        // Xử lý dữ liệu nhận được
+        String dataStr = (new String(data, 0, len)).trim();
+        System.out.println("Dữ liệu nhận được: " + dataStr);
+        String[] numbers = dataStr.split(",");
+        
+        int[] array = new int[numbers.length];
+        for (int i = 0; i < numbers.length; i++) {
+            array[i] = Integer.parseInt(numbers[i]);
         }
+
+        int maxLength = findLongestIncreasingSubsequence(array);
+
+        // Gửi độ dài về server
+        os.write(String.valueOf(maxLength).getBytes());
+        os.flush();
+        
+        socket.close();
+        is.close();
+        os.close();
     }
 
     // Hàm tìm chuỗi con tăng dần dài nhất

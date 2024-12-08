@@ -3,27 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN008/Byte_ChuyenDoiHexa.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN003/Byte_MaHoaCaesarACII.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN005/Byte_MaHoaCaesarACII.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN008/Character_MaHoaVigenere.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_Dem_So_Lan_Xuat_Hien.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_Mat_Ma_Caesar.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN008/Data_PalindromeNumber.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN004/Data_TinhPhuongSaiVaDoLechChuan.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN010/Byte_FindMinFrequency.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN004/Object_Event.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN003/Data_TinhPhuongSaiVaDoLechChuan.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN007/Data_ChangeCoin.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN004/Character_MaHoaVigenere.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN677/Byte_XOR_PTIT.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/Event.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN005/Data_PhanTichThuaSNT.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_TinhTongCacChuSoBigInteger.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_TungXuxSac.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_Tach_2_Chuoi.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_ChuoiConDaiNhatKhongLap.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_TinhTongTBC_PS.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_KyTuLienTiep.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN007/Byte_MaHoa_RunLengthEncoding.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN002/Data_CoinChange.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN007/Character_DemTanSuatKyTu.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN004/Byte_XOR_PTIT.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP/Customer.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_MatMaCaesa.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_Dem_So_Lan_Xuat_Hien.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_ChuoiConTangDanDaiNhat.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_TimTuDaiNhat.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_Customer918.java</file>
         </group>
     </open-files>
 </project-private>

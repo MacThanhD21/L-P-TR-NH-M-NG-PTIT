@@ -1,15 +1,17 @@
+
 import java.io.*;
 import java.net.*;
 import java.util.*;
 
 public class UDP_KyTuLienTiep {
+
     public static void main(String[] args) throws IOException {
         DatagramSocket socket = new DatagramSocket();
         InetAddress sA = InetAddress.getByName("203.162.10.109");
         int sP = 2208;
 
         // Step 1: Send initial request
-        String code = ";B21DCCN003;VyvcOJmF";
+        String code = ";B21DCCN818;zB9GX8Ub";
         DatagramPacket dpSend1 = new DatagramPacket(code.getBytes(), code.length(), sA, sP);
         socket.send(dpSend1);
 
@@ -18,7 +20,7 @@ public class UDP_KyTuLienTiep {
         DatagramPacket dpRev = new DatagramPacket(buf, buf.length);
         socket.receive(dpRev);
         String received = new String(dpRev.getData(), 0, dpRev.getLength());
-
+        
         String[] data = received.split(";");
         String reqId = data[0];
         String str = data[1];
@@ -31,18 +33,17 @@ public class UDP_KyTuLienTiep {
         }
 
         // Step 4: Build the processed data in the desired format
-        StringBuilder processData = new StringBuilder();
+        String processData = "";
         Set<Character> processedChars = new HashSet<>();
-
+        
         for (char c : str.toCharArray()) {
             if (!processedChars.contains(c)) {
-                int cnt = charCount.get(c);
-                processData.append(cnt).append(c);
-                processedChars.add(c); // Mark the character as processed
+                processData += charCount.get(c) + (c + "");
+                processedChars.add(c);
             }
         }
-
-        String result = reqId + ";" + processData.toString();
+        
+        String result = reqId + ";" + processData;
         System.out.println("Processed data: " + result);
 
         // Step 5: Send processed data back to server

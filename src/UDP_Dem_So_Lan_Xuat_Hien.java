@@ -4,49 +4,44 @@ import java.net.*;
 import java.util.*;
 
 public class UDP_Dem_So_Lan_Xuat_Hien {
-    public static void main(String[] args) throws IOException{
-        // Khởi tạo kết nối dùng DatagramSocket
+
+    public static void main(String[] args) throws IOException {
         DatagramSocket socket = new DatagramSocket();
         InetAddress sA = InetAddress.getByName("203.162.10.109");
-        int sP = 2007;
-        
-        // Gửi dữ liệu dùng DatagramPacket
-        String code = ";B21DCCN008;HS0sHUjn";
-        DatagramPacket dpSend = new DatagramPacket(code.getBytes(), code.length(), sA, sP);
-        socket.send(dpSend);
-        
-        // Nhận data
+        int sP = 2208;
+
+        String code = ";B21DCCN818;zB9GX8Ub";
+        DatagramPacket dpGui1 = new DatagramPacket(code.getBytes(), code.length(), sA, sP);
+        socket.send(dpGui1);
+
         byte[] buf = new byte[1024];
-        DatagramPacket dpReceive = new DatagramPacket(buf, buf.length);
-        socket.receive(dpReceive);
-        String tmp = new String (dpReceive.getData()).trim();
-        System.out.println(tmp);
-        
-        // Xử lý chuỗi và gửi lại kết quả
-        String[] parts = tmp.split(";");
-        String requestId = parts[0];
-        String data = parts[1];
-        
-        String ans = "";
+        DatagramPacket dpNhan = new DatagramPacket(buf, buf.length);
+        socket.receive(dpNhan);
+
+        String[] inp = new String(dpNhan.getData()).split(";");
+        String reqId = inp[0];
+        String data = inp[1];
+
         int coun = 1;
-        
-        for(int i = 1; i < data.length(); i++){
-            if(data.charAt(i) == data.charAt(i - 1)) {
+        String ans = "";
+
+        for (int i = 1; i < data.length(); i++) {
+            if (data.charAt(i) == data.charAt(i - 1)) {
                 coun++;
-            }
-            else {
-                ans += coun + data.charAt(i - 1);
+            } else {
+                ans += coun + "" + data.charAt(i - 1);
                 coun = 1;
             }
         }
-        ans += coun + data.charAt(data.length() - 1);
-        String result = requestId + ";" + ans;
-        System.out.println(result);
-        
-        DatagramPacket dpSendAns = new DatagramPacket(ans.getBytes(), ans.length(), sA, sP);
-        socket.send(dpSendAns);
-        
+        ans += coun + "" + data.charAt(data.length() - 1);
+        ans = reqId + ";" + ans;
+        System.out.println(ans);
+
+        DatagramPacket dpGui2 = new DatagramPacket(ans.getBytes(), ans.length(), sA, sP);
+        socket.send(dpGui2);
+
         socket.close();
+
     }
 }
 
