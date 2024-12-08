@@ -8,7 +8,7 @@ public class TCP_TimTuDaiNhat {
     public static void main(String[] args) throws IOException{
         Socket socket = new Socket("203.162.10.109", 2208);
         
-        String code = "B21DCCN818;BijVvIC2";
+        String code = "B21DCCN005;afvEER9o";
         BufferedWriter os = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
         BufferedReader is = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         

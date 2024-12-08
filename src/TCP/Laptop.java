@@ -2,13 +2,13 @@ package TCP;
 
 import java.io.Serializable;
 
-public class Product917 implements Serializable {
+public class Laptop implements Serializable {
 
-    private static final long serialVersionUID = 917;
+    private static final long serialVersionUID = 20150711;
     private int id, quantity;
     private String code, name;
 
-    public Product917(int id, int quantity, String code, String name) {
+    public Laptop(int id, int quantity, String code, String name) {
         this.id = id;
         this.quantity = quantity;
         this.code = code;
