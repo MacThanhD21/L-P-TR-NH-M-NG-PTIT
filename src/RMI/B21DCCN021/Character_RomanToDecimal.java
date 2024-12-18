@@ -5,37 +5,29 @@ import RMI.CharacterService;
 
 public class Character_RomanToDecimal {
     public static void main(String[] args) throws Exception {
-        // Kết nối tới RMI Registry và lấy đối tượng CharacterService
         CharacterService sv = (CharacterService) LocateRegistry.getRegistry("203.162.10.109", 1099).lookup("RMICharacterService");
 
-        // Thông tin sinh viên và mã câu hỏi
-        String studentCode = "B21DCCN021";
-        String qCode = "klyAmvMM";
+        String msv = "B21DCCN021", qCode = "ZSGStZGd";
+        
+        String inp = sv.requestCharacter(msv, qCode);
 
-        // Nhận chuỗi số La Mã từ server
-        String romanInput = sv.requestCharacter(studentCode, qCode);
-        System.out.println("Received Roman numeral: " + romanInput);
-
-        int ans = 0;
-        int preValue = 0;
-        for(int i = romanInput.length() - 1; i >= 0; i--) {
-            int curVal = romanCharToValue(romanInput.charAt(i));
-            if(curVal < preValue) {
-                ans -= curVal;
+        int ans = 0, prev = 0;
+ 
+        for(int i = inp.length() - 1; i >= 0; --i) {
+            int cur = convert(inp.charAt(i));
+            if(cur < prev) {
+                ans -= cur;
             }
             else {
-                ans += curVal;
+                ans += cur;
             }
-            preValue = curVal;
+            prev = cur;
         }
-        String decimalValue = ans + "";
-
-        // Gửi kết quả số thập phân về server
-        sv.submitCharacter(studentCode, qCode, decimalValue);
-        System.out.println("Decimal value submitted successfully.");
+        String res = ans + "";
+        sv.submitCharacter(msv, qCode, res);
     }
 
-    public static int romanCharToValue(char c) {
+    public static int convert(char c) {
         switch(c) {
             case 'I': return 1;
             case 'V': return 5;

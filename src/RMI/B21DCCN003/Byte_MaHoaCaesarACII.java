@@ -13,7 +13,7 @@ public class Byte_MaHoaCaesarACII {
         Registry reg = LocateRegistry.getRegistry("203.162.10.109", 1099);
         ByteService sv = (ByteService) reg.lookup("RMIByteService");
         
-        String msv = "B21DCCN003", qCode = "gQ0brCJ7";
+        String msv = "B21DCCN080", qCode = "mC7kIj6Y";
         byte[] data = sv.requestData(msv, qCode);
         
         System.out.println(data);

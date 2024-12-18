@@ -14,22 +14,16 @@ public class Byte_MaHoa_RunLengthEncoding {
         byte[] data = sv.requestData(studentCode, qCode);
         System.out.println(data);
         
-        List<Byte> compressedList = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
         for(int i = 0; i < data.length; ) {
             byte curByte = data[i];
-            int coun = 1;
-            while(i + coun < data.length && data[i + coun] == curByte) {
+            int coun = 0;
+            while(i < data.length && data[i] == curByte) {
                 coun++;
+                i++;
             }
-            compressedList.add(curByte);
-            compressedList.add(Byte.parseByte(coun + ""));
-            i += coun;
+            sb.append((char) curByte).append((char) coun);
         }
-        byte[] compressed = new byte[compressedList.size()];
-        for(int i = 0; i < compressed.length; i++) {
-            compressed[i] = compressedList.get(i);
-        }
-        
-        sv.submitData(studentCode, qCode, compressed);
+        sv.submitData(studentCode, qCode, sb.toString().getBytes());
     }
 }

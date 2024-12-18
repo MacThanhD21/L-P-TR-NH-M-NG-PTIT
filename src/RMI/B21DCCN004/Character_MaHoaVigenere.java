@@ -22,23 +22,19 @@ public class Character_MaHoaVigenere {
         String text = parts[1];
 
         // Mã hóa Vigenère
-        String encryptedString = "";
-        
-        for(int i = 0, j = 0; i < text.length(); i++) {
+        String ans = "";
+
+        for (int i = 0, j = 0; i < text.length(); i++) {
             char c = text.charAt(i);
-            if(Character.isLetter(c)) {
-                char keyChar = keyword.charAt(j % keyword.length());
-                int shift = keyChar - 'a';
-                char base = Character.isUpperCase(c) ? 'A' : 'a';
-                encryptedString += (char) ((c - base + shift) % 26 + base);
-                j++;
-            } else {
-                encryptedString += c;
-            }
+            char keyChar = keyword.charAt(j % keyword.length());
+            int shift = keyChar - 'a';
+            char base = Character.isUpperCase(c) ? 'A' : 'a';
+            ans += (char) ((c - base + shift) % 26 + base);
+            j++;
         }
-        System.out.println(encryptedString);
+        System.out.println(ans);
 
         // Gửi chuỗi đã mã hóa trở lại server
-        sv.submitCharacter(studentCode, qCode, encryptedString);
+        sv.submitCharacter(studentCode, qCode, ans);
     }
 }

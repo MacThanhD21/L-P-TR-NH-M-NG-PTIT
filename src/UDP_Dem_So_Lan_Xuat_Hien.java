@@ -10,7 +10,7 @@ public class UDP_Dem_So_Lan_Xuat_Hien {
         InetAddress sA = InetAddress.getByName("203.162.10.109");
         int sP = 2208;
 
-        String code = ";B21DCCN818;zB9GX8Ub";
+        String code = ";B21DCCN002;vSgxl3HQ";
         DatagramPacket dpGui1 = new DatagramPacket(code.getBytes(), code.length(), sA, sP);
         socket.send(dpGui1);
 
@@ -24,16 +24,18 @@ public class UDP_Dem_So_Lan_Xuat_Hien {
 
         int coun = 1;
         String ans = "";
-
-        for (int i = 1; i < data.length(); i++) {
-            if (data.charAt(i) == data.charAt(i - 1)) {
+        
+        for(int i = 1; i < data.length(); i++) {
+            if(data.charAt(i) == data.charAt(i - 1)) {
                 coun++;
-            } else {
-                ans += coun + "" + data.charAt(i - 1);
+            }
+            else {
+                ans += coun + (data.charAt(i - 1) + "");
                 coun = 1;
             }
         }
-        ans += coun + "" + data.charAt(data.length() - 1);
+        
+        
         ans = reqId + ";" + ans;
         System.out.println(ans);
 

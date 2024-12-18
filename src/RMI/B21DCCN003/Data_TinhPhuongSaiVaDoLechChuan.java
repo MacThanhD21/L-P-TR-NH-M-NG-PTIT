@@ -25,19 +25,24 @@ public class Data_TinhPhuongSaiVaDoLechChuan {
         }
         System.out.println(inp);
         
-        double sum = 0.0, sumOfSquares = 0.0;
+        int n = data.size();
+        
+        double sum = 0.0, sumOfSquare = 0.0;
         for(double num : data) {
             sum += num;
-            sumOfSquares += num * num;
+            sumOfSquare += (num * num);
         }
-        double mean = sum / data.size();
-        double variance = (sumOfSquares / data.size()) - (mean * mean);
-        double stdDev = Math.sqrt(variance);
+        // B1. Tinh trung binh - mean
+        double mean = (double) sum / n;
+        // B2. Tinh phuong sai - variance
+        double varian = (sumOfSquare / n) - (mean * mean);
+        double dolechchuan = Math.sqrt(varian);
         
-        variance = Math.round(variance * 100.0) / 100.0;
-        stdDev = Math.round(stdDev * 100.0) / 100.0;
+        varian = Math.round(varian * 100.0) / 100.0;
+        dolechchuan = Math.round(dolechchuan * 100.0) / 100.0;
         
-        String result = variance + " : " + stdDev;
+        
+        String result = varian + " : " + dolechchuan;
         sv.submitData(studentCode, qCode, result);
         
     }

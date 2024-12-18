@@ -15,21 +15,22 @@ public class TCP_MatMaCaesa {
         os.writeUTF(code);
         os.flush();
 
-        String encrypted_Data = is.readUTF();
-        System.out.println(encrypted_Data);
+        String inp = is.readUTF();
+        System.out.println(inp);
 
-        int shiftVal = is.readInt();
-        System.out.println(shiftVal);
+        int s = is.readInt();
+        System.out.println(s);
 
         String ans = "";
         
-        // Giai ma: + 26; s = 3, A -> D
-        // Ma Hoa: -26;
+        // Giai ma: + s; s = 3, A -> D
+        // Ma Hoa: -s;
         
-        for(char c : encrypted_Data.toCharArray()) {
+        for(char c : inp.toCharArray()) {
             char base = Character.isUpperCase(c) ? 'A' : 'a';
-            ans += (char) ((c - base + shiftVal) % 26 + base);
+            ans += (char) ((c - base + s) % 26 + base);
         }
+        System.out.println(ans);
         
         os.writeUTF(ans.trim());    
         os.flush();

@@ -10,45 +10,45 @@ public class UDP_KyTuLienTiep {
         InetAddress sA = InetAddress.getByName("203.162.10.109");
         int sP = 2208;
 
-        // Step 1: Send initial request
-        String code = ";B21DCCN818;zB9GX8Ub";
-        DatagramPacket dpSend1 = new DatagramPacket(code.getBytes(), code.length(), sA, sP);
-        socket.send(dpSend1);
+        String code = ";B21DCCN004;19wupYAB";
+        DatagramPacket dpGui1 = new DatagramPacket(code.getBytes(), code.length(), sA, sP);
+        socket.send(dpGui1);
 
         // Step 2: Receive response from server
         byte[] buf = new byte[1024];
         DatagramPacket dpRev = new DatagramPacket(buf, buf.length);
         socket.receive(dpRev);
-        String received = new String(dpRev.getData(), 0, dpRev.getLength());
+        
+        String received = (new String(dpRev.getData())).trim();
+        System.out.println(received);
         
         String[] data = received.split(";");
         String reqId = data[0];
         String str = data[1];
+        
         System.out.println("Received data: " + str);
 
-        // Step 3: Count the occurrences of each character
-        Map<Character, Integer> charCount = new HashMap<>();
+        Map<Character, Integer> mp = new HashMap<>();
         for (char c : str.toCharArray()) {
-            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+            mp.put(c, mp.getOrDefault(c, 0) + 1);
         }
 
-        // Step 4: Build the processed data in the desired format
-        String processData = "";
-        Set<Character> processedChars = new HashSet<>();
+        String ans = "";
+        Set<Character> se = new HashSet<>();
         
         for (char c : str.toCharArray()) {
-            if (!processedChars.contains(c)) {
-                processData += charCount.get(c) + (c + "");
-                processedChars.add(c);
+            if (!se.contains(c)) {
+                ans += mp.get(c) + (c + "");
+                se.add(c);
             }
         }
         
-        String result = reqId + ";" + processData;
+        String result = reqId + ";" + ans;
         System.out.println("Processed data: " + result);
 
         // Step 5: Send processed data back to server
-        DatagramPacket dpSend2 = new DatagramPacket(result.getBytes(), result.length(), sA, sP);
-        socket.send(dpSend2);
+        DatagramPacket dpGui2 = new DatagramPacket(result.getBytes(), result.length(), sA, sP);
+        socket.send(dpGui2);
 
         // Step 6: Close socket
         socket.close();

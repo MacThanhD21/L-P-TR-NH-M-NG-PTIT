@@ -24,6 +24,7 @@ public class TCP_ChuoiConDaiNhatKhongLap {
         String ans = "";
         int n = inp.length(), maxLen = 0, start = 0;
         Map<Character, Integer> mp = new HashMap<>();
+        
         for(int end = 0; end < n; end++) {
             char curChar = inp.charAt(end);
             if(mp.containsKey(curChar)) {

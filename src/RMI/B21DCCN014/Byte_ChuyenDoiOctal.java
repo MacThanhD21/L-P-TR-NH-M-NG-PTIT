@@ -12,13 +12,13 @@ public class Byte_ChuyenDoiOctal {
         Registry reg = LocateRegistry.getRegistry("203.162.10.109", 1099);
         ByteService sv = (ByteService) reg.lookup("RMIByteService");
         
-        String studentCode = "B21DCCN014", qCode = "7iAu1XNt";
+        String studentCode = "B21DCCN029", qCode = "iyxsSwVQ";
         byte[] inp = sv.requestData(studentCode, qCode);
         
-        String octal = "";
+        String ans = "";
         for(byte b : inp) {
-            octal += (String.format("%03o", (b & 0xFF)));
+            ans += (String.format("%03o", b & 0xFF));
         }
-        sv.submitData(studentCode, qCode, octal.getBytes());
+        sv.submitData(studentCode, qCode, ans.getBytes());
     }
 }

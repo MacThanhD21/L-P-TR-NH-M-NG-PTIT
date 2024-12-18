@@ -160,3 +160,12 @@ Code:
             }
         }
   */
+
+/*
+ChuyenDoiHexa
+Code:
+    String ans = "";
+    for(byte c : data) {
+        ans += String.format("%02x", c);
+    }
+*/

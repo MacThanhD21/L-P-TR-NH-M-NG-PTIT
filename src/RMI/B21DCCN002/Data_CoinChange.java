@@ -13,7 +13,7 @@ public class Data_CoinChange {
         Registry reg = LocateRegistry.getRegistry("203.162.10.109", 1099);
         DataService sv = (DataService) reg.lookup("RMIDataService");
         
-        String studentCode = "B21DCCN002", qCode = "dxv4dDNr";
+        String studentCode = "B21DCCN017", qCode = "9WZ9vHyZ";
         int inp = (int) sv.requestData(studentCode, qCode);
         System.out.println(inp);
         

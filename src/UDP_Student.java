@@ -48,7 +48,6 @@ public class UDP_Student {
                 break;
             }
             mail += xxx.charAt(0);
-
         }
         mail += "@ptit.edu.vn";
         x.setEmail(mail);

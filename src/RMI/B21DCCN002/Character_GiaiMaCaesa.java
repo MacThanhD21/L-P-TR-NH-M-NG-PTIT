@@ -18,11 +18,12 @@ public class Character_GiaiMaCaesa {
         int shift = inp.length() % 7;
         
         // giai ma: - shift
+        
         String ans = "";
+        
         for(Character c : inp.toCharArray()) {
             char base = Character.isLowerCase(c) ? 'a' : 'A';
-            char x = (char) ((c - base - shift + 26) % 26 + base);
-            ans += x;
+            ans += (char) ((c - base - shift + 26) % 26 + base);
         }
         System.out.println(ans);
         sv.submitCharacter(msv, qCode, ans);
