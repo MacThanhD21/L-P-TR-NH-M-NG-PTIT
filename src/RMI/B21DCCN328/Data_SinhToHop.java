@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package RMI.B21DCCN328;
 
 import RMI.DataService;
@@ -43,10 +40,12 @@ public class Data_SinhToHop {
                 tmp.add(a.get(idx[i]));
             }
             ans.add(tmp);
+            
             int t = K - 1;
             while(t >= 0 && idx[t] == n - K + t) {
                 --t;
             }
+            
             if(t >= 0) {
                 idx[t]++;
                 for(int i = t + 1; i < K; i++) {
@@ -56,6 +55,7 @@ public class Data_SinhToHop {
                 break;
             }
         }
+        
         
         sv.submitData(msv, qCode, ans);
     }

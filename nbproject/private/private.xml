@@ -4,31 +4,83 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_TinhTong_TBC_PhuongSai.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_TungXuxSac.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_KyTuXuatHienNhieuNhat_VaCacViTriXuatHien.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN019/Byte_MaHoa_RunLengthEncoding.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN015/Byte_SapXepChanLe.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_Student.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN001/Byte_TanXuatItNhat.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_Sec_MinMax_Number.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN011/Character_ChuyenDoiSoLaMa.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_Mat_Ma_Caesar.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN010/Byte_FindMinFrequency.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_GiaiMaCaesar.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN004/Object_Event.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_Product.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN003/Data_TinhPhuongSaiVaDoLechChuan.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN007/Data_ChangeCoin.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN017/Character_XOR_Encoding_Client.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN003/Object_Ticket.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN005/Data_PhanTichThuaSNT.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_Student.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN012/Character_URLEncode.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_MatMaCaesa.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_LoaiBoKyTuTrongChuoiThuNhat.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN002/Byte_GiaiMaBase64.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN008/Byte_ChuyenDoiHexa.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN021/Byte_MaHoa_RLE.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN001/Data_ToHopTiepTheo.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_Tach_2_Chuoi.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_ChuanHoaChuoi.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN319/Data_SinhToHop.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN409/Data_PrimeFactorization.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_Dem_So_Lan_Xuat_Hien.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_TimTuDaiNhat.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN004/Data_TinhPhuongSaiVaDoLechChuan.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_Customer918.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN677/Data_Bo3SoPytago.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN004/Character_MaHoaVigenere.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_KyTuLienTiep.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN002/Data_CoinChange.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_TungXucSac.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN003/Character_PhanTichChuoiJson.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN328/Data_SinhToHop.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_TinhTongCacChuSoBigInteger.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_LoaiBoKyTuTrongChuoi1XuatHienTrongChuoi2.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN005/Byte_MaHoaCaesarACII.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_Product.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN002/Character_GiaiMaCaesa.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_Chuan_Hoa_Chuoi.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN008/Data_PalindromeNumber.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_SapXepTangDan.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN677/Data_TimSoNguyenTo.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_SecMax.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN677/Character_RomanConverter.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN014/Byte_ChuyenDoiOctal.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN014/Character_MaHoaVigerene.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_LoaiBo_KyTuDacBiet_So_KyTuTrung.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_ChuoiConDaiNhatKhongLap.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN016/Byte_TanSuatNhieuNhat.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN014/Data_ToHopTiepTheo.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN007/Byte_MaHoa_RunLengthEncoding.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_ChuoiConTangDanDaiNhat.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN004/Byte_XOR_PTIT.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN008/Byte_ChuyenDoiHexa.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN001/Data_ToHopTiepTheo.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN030/Data_ToHopTiepTheo.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_Tach_2_Chuoi.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN010/Character_MaHoaBase64.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_KhoangCachNhoNhat.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN003/Byte_MaHoaCaesarACII.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN002/Object_Product.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN008/Character_MaHoaVigenere.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN011/Data_PhanTuLonThuK.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_TinhTongTBC_PS.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN677/Character_MaHoaBase64.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/UDP_DanhSachNSoNguyenTo.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_GiaTriLonThuHai.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN008/Object_Product.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN001/Character_MaHoaURL.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN011/Byte_SapXepChanLe.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_Laptop.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN012/Byte_DecodeBase64.java</file>
             <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_SapXepCacTuTheoThuTuTuDien.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/TCP_TungXucSac.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN002/Data_CoinChange.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN029/Character_XOR_String.java</file>
-            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN328/Data_SinhToHop.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/PhanBietCacDangMaHoa.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN677/Byte_XOR_PTIT.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN021/Character_RomanToDecimal.java</file>
+            <file>file:/E:/A-PTIT/Nam4/KY1/LTM/Practice/B21DCCN008/Final_Exam/src/RMI/B21DCCN007/Character_DemTanSuatKyTu.java</file>
         </group>
     </open-files>
 </project-private>

@@ -11,8 +11,7 @@ public class TCP_LoaiBoKyTuTrongChuoiThuNhat {
         BufferedReader is = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         BufferedWriter os = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
         
-        os.write(code);
-        os.newLine();
+        os.write(code+"\n");
         os.flush();
         
         String s1 = is.readLine();

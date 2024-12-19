@@ -16,9 +16,14 @@ public class Byte_ChuyenDoiOctal {
         byte[] inp = sv.requestData(studentCode, qCode);
         
         String ans = "";
+        
+        String ans2 = "";
+        String ansHex = "";
         for(byte b : inp) {
             ans += (String.format("%03o", b & 0xFF));
         }
+        System.out.println(ans);
+        System.out.println(ans2);
         sv.submitData(studentCode, qCode, ans.getBytes());
     }
 }

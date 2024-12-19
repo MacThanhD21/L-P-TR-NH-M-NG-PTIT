@@ -21,8 +21,7 @@ public class Data_Bo3SoPytago {
             for (int b = a + 1; b <= N; b++) {
                 for (int c = b + 1; c <= N; c++) {
                     if (a * a + b * b == c * c) {
-                        List<Integer> triple = new ArrayList<>();
-                        triple.add(a); triple.add(b); triple.add(c);
+                        List<Integer> triple = new ArrayList<>(Arrays.asList(a, b, c));
                         res.add(triple);
                     }
                 }

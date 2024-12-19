@@ -18,11 +18,10 @@ public class Character_MaHoaBase64 {
         System.out.println("Input string: " + inputString);
 
         // Thực hiện mã hóa Base64
-        String encodedString = Base64.getEncoder().encodeToString(inputString.getBytes());
-        System.out.println("Base64 encoded string: " + encodedString);
+        String ans = Base64.getEncoder().encodeToString(inputString.getBytes());
 
         // Triệu gọi submitCharacter để gửi chuỗi đã mã hóa về server
-        sv.submitCharacter(studentCode, qCode, encodedString);
+        sv.submitCharacter(studentCode, qCode, ans);
         System.out.println("Data submitted successfully.");
     }
 }

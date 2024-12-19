@@ -20,7 +20,7 @@ public class Data_PalindromeNumber {
         List<Integer> ans = new ArrayList<>();
 
         for (int i = N; i <= K; i++) {
-            if (isPalindrome(i)) {
+            if (isPalindrome(i + "")) {
                 ans.add(i);
 
             }
@@ -29,14 +29,7 @@ public class Data_PalindromeNumber {
         sv.submitData(msv, qCode, ans);
     }
 
-    public static boolean isPalindrome(int x) {
-        String res = x + "";
-        int n = res.length();
-        for (int i = 0; i < n / 2; i++) {
-            if (res.charAt(i) != res.charAt(n - 1 - i)) {
-                return false;
-            }
-        }
-        return true;
+    public static boolean isPalindrome(String x) {
+        return new StringBuilder(x).reverse().toString().equals(x);
     }
 }

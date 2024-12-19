@@ -13,7 +13,6 @@ public class Character_MaHoaURL {
         String msv = "B21DCCN001", qCode = "AhrzRLmM";
         String inp = sv.requestCharacter(msv, qCode);
         System.out.println(inp);
-        
         String encode = URLEncoder.encode(inp, "UTF-8");
         
         System.out.println(encode);

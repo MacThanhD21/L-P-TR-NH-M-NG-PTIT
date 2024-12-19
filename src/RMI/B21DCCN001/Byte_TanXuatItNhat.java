@@ -24,17 +24,15 @@ public class Byte_TanXuatItNhat {
         int minFre = Integer.MAX_VALUE;
         for (byte x : data) {
             // Khong xet TH Bang tuc la lay TH Dau Tien Nho Hon
-            if(fre.get(x) < minFre) {
+            if (fre.get(x) < minFre) {
                 minFre = fre.get(x);
                 minElement = x;
             }
         }
         System.out.println(minFre + " " + minElement);
         // setup data to send 
-        byte[] results = new byte[2];
-        results[0] = minElement;
-        results[1] = (byte) minFre;
-        
+        byte[] results = {minElement, (byte) minFre};
+
         sv.submitData("B21DCCN001", "CVoQsSJ0", results);
     }
 }
@@ -54,4 +52,4 @@ b. Tìm phần tử có số lần xuất hiện ít nhất trong mảng, nếu 
 Ví dụ: Nếu mảng dữ liệu nhận được là [1, 2, 3, 2, 1], chương trình sẽ tìm ra phần tử xuất hiện ít nhất là 3.
 c. Triệu gọi phương thức submitData để gửi mảng byte kết quả chứa phẩn tử có số lần xuất hiện ít nhất và số lần xuất hiện trở lại server.
 d. Kết thúc chương trình client.
-*/
+ */
